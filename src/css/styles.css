@@ -10,11 +10,20 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(162, 163, 170, 0.4),
+      rgba(214, 215, 223, 0.4)
+    ),
+    url(../images/map-of-the-world-g47522ca59_1920.jpg);
+  background-size: 100%;
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
+  width: 280;
   max-width: 320px;
   margin-bottom: 16px;
 }
@@ -22,16 +31,50 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  max-width: 280px;
+  border-radius: 4px;
+  background-color: #fafafa77;
 }
 .country-list__item {
   display: flex;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.country-list__item img {
+img {
+  margin: 2.5 5 2.5 5;
   width: 30px;
-  height: 20px;
+  height: 22px;
 }
 .country-title {
-  margin: 0 0 0 15;
+  margin: 0 0 0 5;
+}
+.country-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 280px;
+  border-radius: 4px;
+  background-color: #fafafa77;
+}
+.country-card-mediabox {
+  display: flex;
+  align-items: center;
+}
+.country-card-title {
+  margin: 0 0 0 10;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 36px;
+}
+.country-card-textbox {
+}
+.country-card-info {
+  margin: 0;
+  padding: 5px;
+}
+.subtitle {
+  font-weight: bold;
 }
